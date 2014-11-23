@@ -20,6 +20,7 @@ class Movie
   end
 
   def display_reviews
+    puts "Here are all the reviews:"
     @movies[@choice].reviews.each_with_index do |review, index|
       puts "#{index + 1} #{review.quote}"
     end
