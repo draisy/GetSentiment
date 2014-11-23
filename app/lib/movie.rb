@@ -8,7 +8,6 @@ class Movie
   end
 
   def list_movies
-    @movies = BF.lists.in_theaters
     puts "Here is the list of movies:"
     @movies.each_with_index{|movie, index| puts "#{index + 1}. #{movie.name}"}
   end
